@@ -9,10 +9,9 @@ function ItemRepo({ repo, handleRemoveRepo }) {
     <ItemContainer>
       <h3>{repo.name}</h3>
       <p>{repo.full_name}</p>
-      <a href={repo.html_url} target="_blank" rel="noreferrer">
-        Ver repositório
+      <a href={repo.html_url} target="_blank" rel="noreferrer" className="ver">
+        Abrir
       </a>
-      <br />
       <a href="#" onClick={handleRemove} className="remover">
         Remover
       </a>
